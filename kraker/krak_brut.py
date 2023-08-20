@@ -12,10 +12,10 @@ def cezar(co_do_zdekodowania, przesuniencie):
         done += chr(kodASCII)
     return done
 
-# kandytad_1 = int(input("Podaj kod do deszyfracji: "))
-kandydat_2 = "/<V5;)j6\\<Y)8><\\9Fbu,Hy4ONC}pxP\"4st12wn'?@O$6BgQo7i#gtD|s>3lf="
+kandytad_1 = str(input("Podaj kod do deszyfracji: "))
+kandydat_2 = "/<V5;)j6\\<Y)8><\\9Fbu,Hy4ONC}pxP\"4st12wn'?@O$6BgQo7i#gtD|s>3lf="        # to jest przykładowy kod
 
 for przesuniencie in range(-100, 101):
-    print(str(przesuniencie) + " " + cezar(kandydat_2, przesuniencie))
+    print(str(przesuniencie) + " " + cezar(kandytad_1, przesuniencie))
 
         
