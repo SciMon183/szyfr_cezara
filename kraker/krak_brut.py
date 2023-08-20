@@ -1,4 +1,4 @@
-
+#  tu nie potrzebujemy znać przesunięcia tylko deklarujemy zakres jaki nasz szyfr urzywa w kodzie ascii i na jego podstawie dajemy zakres przesunięć
 
 def cezar(co_do_zdekodowania, przesuniencie):
     done = ''
