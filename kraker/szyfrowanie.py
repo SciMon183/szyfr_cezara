@@ -12,6 +12,7 @@ shifted = alphabet[shift:] + alphabet[:shift]
 table = str.maketrans(alphabet, shifted)
 
 encrypted = plain_text.translate(table)
+encrypted = encrypted.lower()
 
 print(encrypted)
 
@@ -27,5 +28,6 @@ shifted = alphabet[shift:] + alphabet[:shift]
 table = str.maketrans(alphabet, shifted)
 
 crypted = plain_text.translate(table)
+crypted = crypted.lower()
 
 print(crypted)
