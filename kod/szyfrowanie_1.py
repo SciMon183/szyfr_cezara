@@ -1,11 +1,13 @@
-klucz = "abcdefghijklmnopqrstuwxyz"
+import string 
 
-litera = 'a' 
+klucz = string.ascii_letters
+print(klucz)
 
-def szyfruj(litera, przesuniencie):
-    
-    nowy_index = klucz.index(litera) + przesuniencie
-    return klucz[nowy_index]
+def szyfruj(word, przesuniencie):
+    zaszyfrowane_slowo = ''
+    for litera in word:
+        nowy_index = (klucz.index(litera) + przesuniencie) % len(klucz)
+        zaszyfrowane_slowo += klucz[nowy_index]
+    return zaszyfrowane_slowo
 
-
-print (szyfruj('b', 3))
+print (szyfruj('zoo', 3))
